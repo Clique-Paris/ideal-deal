@@ -1,10 +1,8 @@
 import puppeteer from 'puppeteer';
+import { Spider } from './structs/spider';
 
-(async () => {
-  const browser = await puppeteer.launch({headless: false});
-  const page = await browser.newPage();
-  await page.goto('https://google.com');
-//   await page.pdf({path: 'google.pdf'});
+const spider: Spider = new Spider('https://google.com');
 
-//   await browser.close();
-})();
+spider.start({headless: false}).then(() => {
+  console.log('Spider created');
+});
