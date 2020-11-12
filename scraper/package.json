@@ -2,9 +2,11 @@
   "name": "ideal-deal-scraper",
   "version": "1.0.0",
   "description": "Web scraper that scrape job boards and job offers",
-  "main": "index.js",
+  "main": "./out/index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "prestart": "tsc",
+    "start": "node ./out/index.js"
   },
   "keywords": [
     "TypeScript",
@@ -15,6 +17,7 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {
     "@types/puppeteer": "^5.4.0",
+    "@typescript-eslint/parser": "^4.7.0",
     "puppeteer": "^5.4.1"
   }
 }
