@@ -1,0 +1,20 @@
+{
+  "name": "ideal-deal-scraper",
+  "version": "1.0.0",
+  "description": "Web scraper that scrape job boards and job offers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "TypeScript",
+    "Puppeteer",
+    "Scraper"
+  ],
+  "author": "Makepad Developers <dev@makepad.fr>",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@types/puppeteer": "^5.4.0",
+    "puppeteer": "^5.4.1"
+  }
+}
